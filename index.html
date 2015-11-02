@@ -6,17 +6,61 @@
 </head>
 <body>
     <form action="index.html" method="post">
-        <input type="text" placeholder="ведите текст">
-        <input type="radio" name="sex" value="0">
-        <input type="radio" name="sex" value="1">
-        <input type="radio" name="sex" value="2">
+        <div>
+            <label for="fio">ФИО</label>
+            <input id="fio" type="text" placeholder="Иванов Иван Иванович" name="spam[fio}">
+        </div>
+        <div>
+            <label>
+                мужской <input type="radio" name="sex" value="0">
+            </label>
+           <label>
+               женский <input type="radio" name="sex" value="1">
+           </label>
+            <label></label>
+                не знаю <input type="radio" name="sex" value="2">
+            </label>
+        </div>
+        <div>
+            <label for="city">Выбирете грод</label>
+            <select name="city" id="city">
+                <option value="1">санкт-петербург</option>
+                <option value="2">Москва</option>
+                <option value="2">Таганрог</option>
+            </select>
+        </div>
 
+            <div>
+                <fieldset>
+                    <legend>Выберете категорию</legend>
+                    <ul>
+                        <li>
+                        <label>
+                            Первый <input type="checkbox" name="secions{}" value="2" checked>
+                        </label>
+                        </li>
+                        <li>
+                        <label>
+                             Второй <input type="checkbox" name="secions{}" value="3">
+                        </label>
+                        </li>
+                    </ul>
+                </fieldset>
+             </div>
+        <div>
+            <label for="comment">особые пожелания</label>
+            <textarea name="comment" id="comment">666</textarea>
+        </div>
 
-        <input type="checkbox" name="secions[]" value="1">
-        <input type="checkbox" name="secions{}" value="2" checked>
-        <input type="checkbox" name="secions{}" value="3">
+                <input type="radio" name="sex" value="0">
+            <input type="radio" name="sex" value="1">
+            <input type="radio" name="sex" value="2">
 
-        <input type="submit" value="Send">
-    </form>
+            <input type="checkbox" name="secions[]" value="1">
+            <input type="checkbox" name="secions{}" value="2" checked>
+            <input type="checkbox" name="secions{}" value="3">
+
+            <input type="submit" value="Send">
+        </form>
 </body>
 </html>
