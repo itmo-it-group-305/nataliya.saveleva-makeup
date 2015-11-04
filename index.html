@@ -2,65 +2,40 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>HTML - формы</title>
+    <title>Веселя метла</title>
 </head>
-<body>
-    <form action="index.html" method="post">
-        <div>
-            <label for="fio">ФИО</label>
-            <input id="fio" type="text" placeholder="Иванов Иван Иванович" name="spam[fio}">
-        </div>
-        <div>
-            <label>
-                мужской <input type="radio" name="sex" value="0">
-            </label>
-           <label>
-               женский <input type="radio" name="sex" value="1">
-           </label>
-            <label></label>
-                не знаю <input type="radio" name="sex" value="2">
-            </label>
-        </div>
-        <div>
-            <label for="city">Выбирете грод</label>
-            <select name="city" id="city">
-                <option value="1">санкт-петербург</option>
-                <option value="2">Москва</option>
-                <option value="2">Таганрог</option>
-            </select>
-        </div>
-
-            <div>
-                <fieldset>
-                    <legend>Выберете категорию</legend>
-                    <ul>
-                        <li>
-                        <label>
-                            Первый <input type="checkbox" name="secions{}" value="2" checked>
-                        </label>
-                        </li>
-                        <li>
-                        <label>
-                             Второй <input type="checkbox" name="secions{}" value="3">
-                        </label>
-                        </li>
-                    </ul>
-                </fieldset>
-             </div>
-        <div>
-            <label for="comment">особые пожелания</label>
-            <textarea name="comment" id="comment">666</textarea>
-        </div>
-
-                <input type="radio" name="sex" value="0">
-            <input type="radio" name="sex" value="1">
-            <input type="radio" name="sex" value="2">
-
-            <input type="checkbox" name="secions[]" value="1">
-            <input type="checkbox" name="secions{}" value="2" checked>
-            <input type="checkbox" name="secions{}" value="3">
-
-            <input type="submit" value="Send">
-        </form>
+<body bgcolor="#faebd7">
+<header>
+    <p><img src="img/logo.png" alt="Логотип" width="150"></p>
+    <p align="right"><b>8(800)123-45-67</b></p>
+</header>
+<nav>
+    <p align="center"><a href="index.html">Главная</a> <a href="catalog.html">Услуги</a> <a href="about.html">Контакты</a></p>
+</nav>
+<section>
+    <figure>
+        <p align="center"><img src="img/slaider1.jpg"></p>
+    </figure>
+</section>
+<article>
+    <h1 align="center">Веселая метла</h1>
+    <p>Рады приветствовать вас в нашей студии "Веселая метла"!!!</p>
+    <p align="justify">Представляем клуб по интересам для ведьмочек и не только. У нас вы можите найти друзей по интересам, ознакомится с полезной литературй, <strong>приобрести</strong> или <strong>взять в аренду</strong> транспортное средство.</p>
+    <p align="justify">Исторически, полеты совершаются на своих мётлах, кочергах, ухватах, лопатах, граблях и просто палках, по мере надобности то ударяя по тучам и производя дождь, то начисто выметая небо от затемняющих его туч. Русские барышни носятся по воздуху в железной ступе (котле — туче), погоняя пестом или клюкой и заметая след помелом. Перед полётом могут использоваться такие сопутствующие товары, как волшебными мазями.</p>
+    <h2 align="center">Наши преимущества</h2>
+    <ul>
+        <li>Лучшее качество</li>
+        <li>Самый большой выбор</li>
+        <li>Быстрая доставка</li>
+        <li>Многолетний опыт работы</li>
+        <li>Аренда транспорта</li>
+    </ul>
+</article>
+<footer>
+    <address >
+        <a href="mailto:nnn@gmail.com">Написать нам</a>
+    </address>
+    <p align="right">&copy;0015 Бабка Ёжка</p>
+</footer>
 </body>
 </html>

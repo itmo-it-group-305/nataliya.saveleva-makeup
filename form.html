@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма заказа</title>
+</head>
+<body>
+    <nav>
+        <p align="center"><a href="index.html">Главная</a> <a href="catalog.html">Услуги</a> <a href="about.html">Контакты</a></p>
+    </nav>
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend>Данные получателя</legend>
+            <div>
+                <label for="fio">Имя</label>
+                <input id="fio" name="fio" type="text" placeholder="Марфа Васильевна">
+            </div>
+            <div>
+                <label for="tel">Телефон</label>
+                <input id="tel"  name="tel" type="tel" placeholder="+7(812)123-45-67">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" name="emeil" type="email" placeholder="info@mail.ru">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Способ доставки</legend>
+            <label><input name="dostavka" type="radio">Курьером</label>
+            <label><input name="dostavka" type="radio">Самовывоз</label>
+        </fieldset>
+        <fieldset>
+            <legend>Адрес доставки</legend>
+            <label for="city">Выбирете город</label>
+            <select id="city" name="city">
+                <option value="1">Санкт-Петербург</option>
+                <option value="2">Ленинградская область</option>
+                <option value="3">Москва</option>
+                <option value="4">Московская область</option>
+            </select>
+            <div></div>
+                <label for="adres">Адрес доставки</label>
+                <input id="adres" name="adres" type="text">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Заказ товара из каталога</legend>
+            <fieldset>
+                <legend>Метлы</legend>
+                <div>
+                    <label><input name="chk_metla_1" value="1" type="checkbox">Метла 1</label><br>
+                    <label><input name="chk_metla_2" value="1" type="checkbox">Метла 2</label><br>
+                    <label><input name="chk_metla_3" value="1" type="checkbox">Метла 3</label><br>
+                    <label><input name="chk_metla_4" value="1" type="checkbox">Метла 4</label><br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Ступы</legend>
+                <div>
+                    <label><input name="chk_stupa_1" value="1" type="checkbox">Ступа 1</label><br>
+                    <label><input name="chk_stupa_2" value="1" type="checkbox">Ступа 2</label><br>
+                    <label><input name="chk_stupa_3" value="1" type="checkbox">Ступа 3</label><br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Избушки на курьих ножках</legend>
+                <div>
+                    <label><input name="chk_izba_1" value="1" type="checkbox">Избушка 1</label><br>
+                    <label><input name="chk_izba_2" value="1" type="checkbox">Избушка 2</label><br>
+                    <label><input name="chk_izba_3" value="1" type="checkbox">Избушка 3</label><br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Сопутствующие товары</legend>
+                <div>
+                    <select name="dop" size="5" multiple>
+                        <optgroup label="Средства для ухода">
+                            <option value="1">Товар 1</option>
+                            <option value="2">Товар 2</option>
+                            <option value="3">Товар 3</option>
+                            <option value="4">Товар 4</option>
+                        </optgroup>
+                        <optgroup label="Ступа">
+                            <option value="1">Предмет 1</option>
+                            <option value="2">Предмет 2</option>
+                            <option value="3">Предмет 3</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <label>Индивидуальный заказ</label>
+            <div>
+                <label for="comment">Пожелания к заказу</label>
+                <textarea name="comment" id="comment"></textarea>
+            </div>
+            <div>
+                <label for="multiFileField">Прикрепите свои макеты</label>
+                <input id="multiFileField" type="file" multiple>
+            </div>
+        </fieldset>
+        <input type="submit" value="Отправить заказ">
+     </form>
+    <a href="catalog.html">Вернуться в каталог</a>
+</body>
+</html>
