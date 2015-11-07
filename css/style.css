@@ -1,0 +1,125 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background: white;
+}
+
+ul.menu {
+    margin: 30px;
+    padding: 4px;
+    text-align: center;
+}
+ul.menu li {
+    display: inline;
+    margin-right: 40px;
+    border: 1px solid #000;
+    padding: 12px;
+}
+ul.menu a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 200%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 150%;
+    text-align: center;
+}
+
+p, summary {
+    text-align: justify;
+    margin: 10px;
+    text-indent: 20px;
+}
+
+.tel, .copy {
+    text-align: right;
+}
+
+.slaider {
+    text-align: center;
+}
+div.logo img {
+    width: 150px;
+}
+
+header, footer, article {
+    border:1px solid grey;
+    margin:5px; margin-bottom:15px; padding:8px;
+    background-color:white;
+}
+
+header,footer {
+    color: white;
+    background-color: #7ABBFF;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 50%;
+    border: 2px solid rgba(23, 21, 13, 0.55);
+    padding: 5px;
+    margin: auto;
+}
+
+td, th {
+    border: 1px solid rgba(23, 21, 13, 0.55);
+    padding: 5px;
+    text-align: center;
+}
+th {
+    background: #c0c0c0;
+}
+
+table.catalog img {
+    width: 100px;
+}
+
+fieldset {
+    background-color: rgba(122, 187, 255, 0.32);
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+legend {
+    font-size: 105%;
+    color: #5b85b6;
+}
+
+.form-client label, .form-adress label, .form-indiv label{
+   padding: 5px;
+    width: 150px;
+    display: inline-table;
+}
+
+div.form-submit, div.puch{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+div.form-submit input {
+    width: 170px;
+    height: 40px;
+    font-size: 20px;
+}
+
+div.puch a {
+    border: 1px solid #333;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+
+}
+div.puch a:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+    color: #2016ee;
+}
