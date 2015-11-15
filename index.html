@@ -1,46 +1,78 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <title>Веселя метла</title>
 </head>
 <body>
-<header>
-    <div class="logo"><img src="img/logo.png" alt="Логотип"></div>
-    <div class="tel"><strong>8(800)123-45-67</strong></div>
-</header>
-<nav>
-    <ul class="menu">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="about.html">Контакты</a></li>
-    </ul>
-</nav>
+<div class="row row-header">
+    <section class="col-12">
+        <header>
+            <div class="tel"><strong>8(800)123-45-67<br>8(800)123-45-68</strong><br><p><a href="mailto:nnn@gmail.com">Написать нам</a></p></div>
+            <div class="logo"><img src="img/logo.png" alt="Логотип"></div>
+        </header>
+        <nav>
+            <div class="menu2">
+           <div class="div-menu">
+           <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></a>
+                    <ul>
+                        <li><a href="catalog.html">Метлы</a></li>
+                        <li><a href="catalog.html">Ступы</a></li>
+                        <li><a href="catalog.html">Избушки</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">Контакты</a></li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+    </section>
+</div>
 <section>
     <figure>
         <div class="slaider"><img src="img/slaider1.jpg"></div>
     </figure>
 </section>
-<article>
-    <h1>Веселая метла</h1>
-    <p>Рады приветствовать вас в нашей студии "Веселая метла"!!!</p>
-    <p>Представляем клуб по интересам для ведьмочек и не только. У нас вы можите найти друзей по интересам, ознакомится с полезной литературй, <strong>приобрести</strong> или <strong>взять в аренду</strong> транспортное средство.</p>
-    <p>Исторически, полеты совершаются на своих мётлах, кочергах, ухватах, лопатах, граблях и просто палках, по мере надобности то ударяя по тучам и производя дождь, то начисто выметая небо от затемняющих его туч. Русские барышни носятся по воздуху в железной ступе (котле — туче), погоняя пестом или клюкой и заметая след помелом. Перед полётом могут использоваться такие сопутствующие товары, как волшебными мазями.</p>
-    <h2>Наши преимущества</h2>
-    <ul>
-        <li>Лучшее качество</li>
-        <li>Самый большой выбор</li>
-        <li>Быстрая доставка</li>
-        <li>Многолетний опыт работы</li>
-        <li>Аренда транспорта</li>
-    </ul>
-</article>
-<footer>
-    <address >
-        <p>Веселая метла</p>
-    </address>
-    <div class="tel">&copy;0015 Бабка Ёжка</div>
-</footer>
+<div class="row">
+    <section class="col-12">
+        <article>
+            <h1>Веселая метла</h1>
+            <p>Рады приветствовать вас в нашей студии "Веселая метла"!!!</p>
+            <p>Представляем клуб по интересам для ведьмочек и не только. У нас вы можите найти друзей по интересам, ознакомится с полезной литературй, <strong>приобрести</strong> или <strong>взять в аренду</strong> транспортное средство.</p>
+            <p>Исторически, полеты совершаются на своих мётлах, кочергах, ухватах, лопатах, граблях и просто палках, по мере надобности то ударяя по тучам и производя дождь, то начисто выметая небо от затемняющих его туч. Русские барышни носятся по воздуху в железной ступе (котле — туче), погоняя пестом или клюкой и заметая след помелом. Перед полётом могут использоваться такие сопутствующие товары, как волшебными мазями.</p>
+            <h2>Наши преимущества</h2>
+            <ul>
+                <li>Лучшее качество</li>
+                <li>Самый большой выбор</li>
+                <li>Быстрая доставка</li>
+                <li>Многолетний опыт работы</li>
+                <li>Аренда транспорта</li>
+            </ul>
+            <h2>Остерегайтесь подделок</h2>
+            <div>
+                <a href="#open-modal">Внимание!!!</a>
+                <div class="modal" id="open-modal">
+                    <div class="modal-container">
+                        <p>Остерегайтесь подделок</p>
+                        <a href="#modal-close">Закрыть</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    </div>
+    <footer>
+        <div class="row">
+            <section class="col-12">
+                <address>
+                    <p>Веселая метла</p>
+                </address>
+                <div class="copy">&copy;0015 Бабка Ёжка</div>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>

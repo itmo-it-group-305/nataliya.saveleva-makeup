@@ -1,122 +1,144 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>Форма заказа</title>
+    <title>Веселя метла</title>
 </head>
 <body>
-<header>
-    <div class="logo"><img src="img/logo.png" alt="Логотип"></div>
-    <div class="tel"><strong>8(800)123-45-67</strong></div>
-</header>
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="about.html">Контакты</a></li>
-        </ul>
-    </nav>
-    <form action="index.html" method="post">
-        <fieldset class="form-client">
-            <legend>Данные получателя</legend>
-            <div class="form-str">
-                <label for="fio">Имя</label>
-                <input id="fio" name="fio" type="text" placeholder="Марфа Васильевна">
-            </div>
-            <div>
-                <label for="tel">Телефон</label>
-                <input id="tel"  name="tel" type="tel" placeholder="+7(812)123-45-67">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input id="email" name="emeil" type="email" placeholder="info@mail.ru">
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Способ доставки</legend>
-            <label><input name="dostavka" type="radio">Курьером</label>
-            <label><input name="dostavka" type="radio">Самовывоз</label>
-        </fieldset>
-        <fieldset class="form-adress">
-            <legend>Адрес доставки</legend>
-            <label for="city">Выбирете город</label>
-            <select id="city" name="city">
-                <option value="1">Санкт-Петербург</option>
-                <option value="2">Ленинградская область</option>
-                <option value="3">Москва</option>
-                <option value="4">Московская область</option>
-            </select>
-            <div></div>
-                <label for="adres">Адрес доставки</label>
-                <input id="adres" name="adres" type="text">
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Заказ товара из каталога</legend>
-            <fieldset>
-                <legend>Метлы</legend>
-                <div>
-                    <label><input name="chk_metla_1" value="1" type="checkbox">Метла 1</label><br>
-                    <label><input name="chk_metla_2" value="1" type="checkbox">Метла 2</label><br>
-                    <label><input name="chk_metla_3" value="1" type="checkbox">Метла 3</label><br>
-                    <label><input name="chk_metla_4" value="1" type="checkbox">Метла 4</label><br>
+<div class="row row-header">
+    <section class="col-12">
+        <header>
+            <div class="tel"><strong>8(800)123-45-67<br>8(800)123-45-68</strong></div>
+            <div class="logo"><img src="img/logo.png" alt="Логотип"></div>
+        </header>
+        <nav>
+            <div class="menu2">
+                <div class="div-menu">
+                    <ul class="menu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></a>
+                            <ul>
+                                <li><a href="catalog.html">Метлы</a></li>
+                                <li><a href="catalog.html">Ступы</a></li>
+                                <li><a href="catalog.html">Избушки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">Контакты</a></li>
+                    </ul>
                 </div>
-            </fieldset>
-            <fieldset>
-                <legend>Ступы</legend>
-                <div>
-                    <label><input name="chk_stupa_1" value="1" type="checkbox">Ступа 1</label><br>
-                    <label><input name="chk_stupa_2" value="1" type="checkbox">Ступа 2</label><br>
-                    <label><input name="chk_stupa_3" value="1" type="checkbox">Ступа 3</label><br>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Избушки на курьих ножках</legend>
-                <div>
-                    <label><input name="chk_izba_1" value="1" type="checkbox">Избушка 1</label><br>
-                    <label><input name="chk_izba_2" value="1" type="checkbox">Избушка 2</label><br>
-                    <label><input name="chk_izba_3" value="1" type="checkbox">Избушка 3</label><br>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Сопутствующие товары</legend>
-                <div>
-                    <select name="dop" size="5" multiple>
-                        <optgroup label="Средства для ухода">
-                            <option value="1">Товар 1</option>
-                            <option value="2">Товар 2</option>
-                            <option value="3">Товар 3</option>
-                            <option value="4">Товар 4</option>
-                        </optgroup>
-                        <optgroup label="Ступа">
-                            <option value="1">Предмет 1</option>
-                            <option value="2">Предмет 2</option>
-                            <option value="3">Предмет 3</option>
-                        </optgroup>
+            </div>
+        </nav>
+    </section>
+</div>
+<div class="row">
+    <section class="col-12">
+        <form action="index.html" method="post">
+                <fieldset class="form-client">
+                    <legend>Данные получателя</legend>
+                    <div class="form-str">
+                        <label for="fio">Имя</label>
+                        <input id="fio" name="fio" type="text" placeholder="Марфа Васильевна">
+                    </div>
+                    <div>
+                        <label for="tel">Телефон</label>
+                        <input id="tel"  name="tel" type="tel" placeholder="+7(812)123-45-67">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" name="emeil" type="email" placeholder="info@mail.ru">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Способ доставки</legend>
+                    <label><input name="dostavka" type="radio">Курьером</label>
+                    <label><input name="dostavka" type="radio">Самовывоз</label>
+                </fieldset>
+                <fieldset class="form-adress">
+                    <legend>Адрес доставки</legend>
+                    <label for="city">Выбирете город</label>
+                    <select id="city" name="city">
+                        <option value="1">Санкт-Петербург</option>
+                        <option value="2">Ленинградская область</option>
+                        <option value="3">Москва</option>
+                        <option value="4">Московская область</option>
                     </select>
-                </div>
-            </fieldset>
-        </fieldset>
-        <fieldset class="form-indiv">
-            <legend>Индивидуальный заказ</legend>
-            <div>
-                <label for="comment">Пожелания к заказу</label>
-                <textarea name="comment" id="comment"></textarea>
-            </div>
-            <div>
-                <label for="multiFileField">Прикрепите свои макеты</label>
-                <input id="multiFileField" type="file" multiple>
-            </div>
-        </fieldset>
-        <div class="form-submit"><input type="submit" value="Отправить заказ"></div>
-     </form>
+                    <div></div>
+                        <label for="adres">Адрес доставки</label>
+                        <input id="adres" name="adres" type="text">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Заказ товара из каталога</legend>
+                    <fieldset>
+                        <legend>Метлы</legend>
+                        <div>
+                            <label><input name="chk_metla_1" value="1" type="checkbox">Метла 1</label><br>
+                            <label><input name="chk_metla_2" value="1" type="checkbox">Метла 2</label><br>
+                            <label><input name="chk_metla_3" value="1" type="checkbox">Метла 3</label><br>
+                            <label><input name="chk_metla_4" value="1" type="checkbox">Метла 4</label><br>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Ступы</legend>
+                        <div>
+                            <label><input name="chk_stupa_1" value="1" type="checkbox">Ступа 1</label><br>
+                            <label><input name="chk_stupa_2" value="1" type="checkbox">Ступа 2</label><br>
+                            <label><input name="chk_stupa_3" value="1" type="checkbox">Ступа 3</label><br>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Избушки на курьих ножках</legend>
+                        <div>
+                            <label><input name="chk_izba_1" value="1" type="checkbox">Избушка 1</label><br>
+                            <label><input name="chk_izba_2" value="1" type="checkbox">Избушка 2</label><br>
+                            <label><input name="chk_izba_3" value="1" type="checkbox">Избушка 3</label><br>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Сопутствующие товары</legend>
+                        <div>
+                            <select name="dop" size="5" multiple>
+                                <optgroup label="Средства для ухода">
+                                    <option value="1">Товар 1</option>
+                                    <option value="2">Товар 2</option>
+                                    <option value="3">Товар 3</option>
+                                    <option value="4">Товар 4</option>
+                                </optgroup>
+                                <optgroup label="Ступа">
+                                    <option value="1">Предмет 1</option>
+                                    <option value="2">Предмет 2</option>
+                                    <option value="3">Предмет 3</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </fieldset>
+                </fieldset>
+                <fieldset class="form-indiv">
+                    <legend>Индивидуальный заказ</legend>
+                    <div>
+                        <label for="comment">Пожелания к заказу</label>
+                        <textarea name="comment" id="comment"></textarea>
+                    </div>
+                    <div>
+                        <label for="multiFileField">Прикрепите свои макеты</label>
+                        <input id="multiFileField" type="file" multiple>
+                    </div>
+                </fieldset>
+                <div class="form-submit"><input type="submit" value="Отправить заказ"></div>
+        </form>
     <a href="catalog.html">Вернуться в каталог</a>
+</section>
+</div>
 <footer>
-    <address >
-        <p>Веселая метла</p>
-    </address>
-    <div class="tel">&copy;0015 Бабка Ёжка</div>
+    <div class="row">
+        <section class="col-12">
+            <address>
+                <p>Веселая метла</p>
+            </address>
+            <div class="copy">&copy;0015 Бабка Ёжка</div>
+        </section>
+    </div>
 </footer>
 </body>
 </html>

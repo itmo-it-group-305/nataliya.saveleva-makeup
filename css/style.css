@@ -1,21 +1,32 @@
+/*@import url(//necolas.github.io/normalize.css/3.0.2/normalize.css);*/
+/*@import "reset.css";*/
+@import "grid.css";
+
+
 body {
     font-family: Verdana, Arial, sans-serif;
     background: white;
+    padding: 0;
 }
 
-ul.menu {
-    margin: 30px;
-    padding: 4px;
+header {
+    height: 140px;
+    background: url(../img/header_bg.png) no-repeat 50% -95px;
+}
+
+.row-header {
+    background-color: #1F181F;
+}
+
+.menu2 {
+    width: 100%;
     text-align: center;
 }
-ul.menu li {
-    display: inline;
-    margin-right: 40px;
-    border: 1px solid #000;
-    padding: 12px;
-}
-ul.menu a {
-    text-decoration: none;
+
+.div-menu {
+    height: 55px;
+    width: 380px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -28,14 +39,23 @@ h2 {
     text-align: center;
 }
 
-p, summary {
+p,
+summary {
     text-align: justify;
     margin: 10px;
     text-indent: 20px;
 }
 
-.tel, .copy {
+
+.copy {
     text-align: right;
+}
+
+.tel {
+    width: 200px;
+    height: 70px;
+    float: right;
+    margin-top: 30px;
 }
 
 .slaider {
@@ -45,15 +65,15 @@ div.logo img {
     width: 150px;
 }
 
-header, footer, article {
+article {
     border:1px solid grey;
     margin:5px; margin-bottom:15px; padding:8px;
     background-color:white;
 }
 
-header,footer {
+footer {
     color: white;
-    background-color: #7ABBFF;
+    background-color: #1F181F;
     margin-bottom: 5px;
 }
 
@@ -64,7 +84,8 @@ table {
     margin: auto;
 }
 
-td, th {
+td,
+th {
     border: 1px solid rgba(23, 21, 13, 0.55);
     padding: 5px;
     text-align: center;
@@ -89,13 +110,16 @@ legend {
     color: #5b85b6;
 }
 
-.form-client label, .form-adress label, .form-indiv label{
+.form-client label,
+.form-adress label,
+.form-indiv label {
    padding: 5px;
     width: 150px;
     display: inline-table;
 }
 
-div.form-submit, div.puch{
+div.form-submit,
+div.puch {
     width: 40%;
     margin: auto;
     text-align: center;
@@ -122,4 +146,112 @@ div.puch a:hover {
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
     background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
     color: #2016ee;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*font-size: 100%;*/
+    /*font: inherit;*/
+    vertical-align: baseline;
+}
+
+
+.menu,
+.menu li ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.menu > li {
+    float:left;
+    text-align: center;
+    padding: 7px 15px;
+    margin-left: 1px;
+}
+
+.menu li ul {
+    display:none;
+    position:absolute;
+    text-align: left;
+    background-color:#1F181F;
+    width:200px;
+    margin-top:5px;
+}
+.menu li ul {
+    margin-left:-13px;
+    font-size:80%;
+}
+
+.menu li:hover ul{
+    display:block;
+}
+
+.menu li:hover {
+    background: #7d7e7d;
+}
+
+.menu li li {
+    padding:4px 0 4px 8px;
+}
+
+
+.menu li ul li:hover ul {
+    display:block;
+}
+
+.menu li ul  li:hover {
+    background-color:#7d7e7d;
+}
+
+.menu li ul li ul {
+    margin-left:190px;
+    margin-top:-17px;
+    width:220px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 120%;
+    color: white;
+    display: block;
+}
+
+.form-row label {
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.modal-container {
+    position: fixed;
+    background-color: #fff;
+    /*border: 1px solid #000;*/
+    width: 70%;
+    max-width: 400px;
+    left: 35%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.modal:before {
+    content: "";
+    position: fixed;
+    display: none;
+    background-color: rgba(0,0,0,.8);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
+}
+
+.modal:target:before {
+    display: block;
+}
+
+.modal:target .modal-container {
+    top: 20%;
 }
